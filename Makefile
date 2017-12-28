@@ -10,9 +10,7 @@ build:
 
 commit:
 	rm -f ${REPO}/${ARCH}/${REPO}.db && cp ${REPO}/${ARCH}/${REPO}.db.tar.gz ${REPO}/${ARCH}/${REPO}.db
-	rm -f ${REPO}/${REPO}.db && cp ${REPO}/${REPO}.db.tar.gz ${REPO}/${REPO}.db
 	rm -f ${REPO}/${ARCH}/${REPO}.files && cp ${REPO}/${ARCH}/${REPO}.files.tar.gz ${REPO}/${ARCH}/${REPO}.files
-	rm -f ${REPO}/${REPO}.files && cp ${REPO}/${REPO}.files.tar.gz ${REPO}/${REPO}.files
 	git add -f ./${REPO}
 	git commit -m "update pkg repository"
 	git push origin master
