@@ -16,3 +16,7 @@ commit:
 	git add -f ./${REPO}
 	git commit -m "update pkg repository"
 	git push origin master
+
+clean:
+	rm -rf ${REPO}
+	rm -rf fluxbox-settings
